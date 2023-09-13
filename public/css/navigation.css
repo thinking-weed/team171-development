@@ -125,6 +125,7 @@
     scroll-behavior: smooth;
     margin: auto 0;
     color: white;
+    border: none;
 }
 .pagelinks a:hover {
     text-decoration: underline;
