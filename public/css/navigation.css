@@ -92,6 +92,10 @@
     color: blue;
 }
 
+.profile_logout_links form button:hover{
+    text-decoration: underline;
+    color: blue;
+}
 /*home_navのCSS*/
 
 .homenavbar {
