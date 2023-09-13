@@ -31,10 +31,10 @@
         </div>
         @if(Auth::check())
         <div class="profile_logout_links">
-            <a href="{{ route('profile.edit') }}">アカウント編集</a>
+            <a href="{{ route('profile.edit') }}" style="border: none;color:white;">アカウント編集</a>
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button type="submit">ログアウト</button>
+                <button type="submit" style="border: none;color:white;">ログアウト</button>
             </form>
         </div>
         @endif
