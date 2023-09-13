@@ -115,6 +115,7 @@
     font-size: 1.5rem;
     margin: auto 0;
     padding: 0;
+    color: white;
 }
 
 .pagelinks a {
@@ -123,6 +124,7 @@
     font-size: 1rem;
     scroll-behavior: smooth;
     margin: auto 0;
+    color: white;
 }
 .pagelinks a:hover {
     text-decoration: underline;
