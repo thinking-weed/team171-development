@@ -45,6 +45,10 @@
     color: white;
     border: none;
 }
+.profile_logout_links a,.profile_logout_links form{
+    color: white;
+    border: none;
+}
 .Itempagelinks a:hover,.profile_logout_links a:hover,.profile_logout_links form:hover {
     text-decoration: underline;
     color: blue;
