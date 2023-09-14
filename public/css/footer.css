@@ -13,8 +13,10 @@ footer {
 }
 .reference {
     margin-top: 0.5rem;
+    margin-left: 10%;
 }
 
 footer div ul li{
     text-indent: 2rem;
+    margin-left: 10%;
 }
