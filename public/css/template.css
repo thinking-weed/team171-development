@@ -29,7 +29,8 @@ body{
 }
 
 .categories_dropdown{
-    margin-left: 8.5rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
     background-color: black;
     opacity: 1.0;
     color: white;
