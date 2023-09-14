@@ -11,7 +11,7 @@
             {{ slot }}のところに挿入され、「app.blade.php」が表示される--}}
 
     <div class="index-items-outerwrap">
-        <div class="index-items-innerwrap mx-auto sm:px-6 lg:px-8">
+        <div class="index-items-innerwrap sm:px-6 lg:px-8" style="margin-left: auto; margin-right:5%;margin-bottom:1rem;">
             <div class="flex">
                 <div class="search_count container" >
                     <p style="font-size:1rem;">検索されたキーワードを含む商品は、全部で <strong style="font-size:2rem;">{{ $count_search_results }}</strong>件です。</p>
