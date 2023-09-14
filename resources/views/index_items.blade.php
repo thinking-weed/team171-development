@@ -10,8 +10,8 @@
         {{-- ここに入力したものは、resourceのlayoutsフォルダの中のapp.blade.phpの
             {{ slot }}のところに挿入され、「app.blade.php」が表示される--}}
 
-    <div class="index-items-outerwrap">
-        <div class="index-items-innerwrap sm:px-6 lg:px-8" style="margin-left: auto; margin-right:5%;margin-bottom:1rem;">
+    <div class="index-items-outerwrap" style="margin-left: auto; margin-right:5%;margin-bottom:1rem;">
+        <div class="index-items-innerwrap sm:px-6 lg:px-8">
             <div class="flex">
                 <div class="search_box">
                     <form class="search_form" method="post" action="{{ route('searched.items.index') }}" enctype="multipart/form-data">
