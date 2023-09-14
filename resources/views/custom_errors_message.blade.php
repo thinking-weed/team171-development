@@ -11,7 +11,7 @@
             {{ slot }}のところに挿入され、「app.blade.php」が表示される--}}
 
     <div class="index-items-outerwrap">
-        <div class="errors_message_area" style="margin-bottom:5rem;">
+        <div class="errors_message_area" style="margin-bottom:1rem;">
             <p class="message_statement">
                 {{ $message }}
             </p>

@@ -11,7 +11,7 @@
             {{ slot }}のところに挿入され、「app.blade.php」が表示される--}}
 
     <div class="register-items-outerwrap">
-        <div class="register-items-innerwrap mx-auto sm:px-6 lg:px-8" style="margin-bottom:5rem;">
+        <div class="register-items-innerwrap mx-auto sm:px-6 lg:px-8" style="margin-bottom:1rem;">
 
             {{-- POST通信によるデータベースの保存が成功であれば表示、 --}}
             @if (session('message'))
