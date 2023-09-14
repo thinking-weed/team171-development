@@ -26,7 +26,7 @@
                 </div>
                 @include('layouts.categories_dropdown')
             </div>
-            <table class="index_table table table-striped table-hover table-bordered">
+            <table class="index_table table table-striped table-hover table-bordered" style="margin-bottom:5rem;">
                 <thead>
                         <tr>
                         <th scope="col" class="col_id">ID</th>
