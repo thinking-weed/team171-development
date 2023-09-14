@@ -61,7 +61,7 @@
         @if (isset($header))
             {{ $header }}
         @endif
-        <div class="outerwrap">
+        <div class="outerwrap"　style="margin-bottom:1rem;">
             {{ $slot }}
         </div>
         @include('layouts.footer')
