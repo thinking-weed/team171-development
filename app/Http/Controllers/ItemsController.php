@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use App\Models\Item;
 use Illuminate\Support\Facades\Auth;//ログインユーザーに関する情報をAuth::～を使えるようにするuse宣言
-use App\Models\Users;//<--User情報をデータベースのusersテーブルから持ってくるために書く宣言
+use App\Models\User;//<--User情報をデータベースのusersテーブルから持ってくるために書く宣言
 use App\Rules\DataTypeMatch;
 use Illuminate\Http\RedirectResponse as HttpRedirectResponse;
 
@@ -21,7 +21,7 @@ class ItemsController extends Controller
     public function index()
     {
         $choices = Category::all();
-        $auth_users = Users::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
+        $auth_users = User::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
         $items = Item::where('delete_flag', 0)->get();
         //なんかデータベースからデータを取り出す方法はall()や上記以外にもめっちゃあるらしいです
         // おおきくSQLクエリビルダとEloquent ORMに分かれる。上やall()は後者
@@ -64,7 +64,7 @@ class ItemsController extends Controller
         public function ShowItemsRegisterScreen()
     {
     $choices = Category::all();
-    $auth_users = Users::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
+    $auth_users = User::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
     $items = Item::all();
     $login_user = Auth::user();//ログインユーザー情報を取得
     /**
@@ -149,7 +149,7 @@ class ItemsController extends Controller
     public function editorview($id)
     {
         $choices = Category::all();
-        $auth_users = Users::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
+        $auth_users = User::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
         $login_user = Auth::user();//ログインユーザー情報を取得
         $registered_item_informations = Item::all();
         return view('ItemsInfoEdit.edit',compact('auth_users','login_user','registered_item_informations','choices'));

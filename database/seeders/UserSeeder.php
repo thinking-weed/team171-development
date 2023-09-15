@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Users::create([
+        \App\Models\User::create([
             'name' => '管理者1',
             'email' => 'admin01@gmail.com',
             'email_verified_at' => now(),
@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
             //idのカラムは要らない
         ]);
 
-        \App\Models\Users::create([
+        \App\Models\User::create([
             'name' => '管理者2',
             'email' => 'admin02@gmail.com',
             'email_verified_at' => now(),
@@ -37,7 +37,7 @@ class UserSeeder extends Seeder
             //idのカラムは要らない
         ]);
 
-        \App\Models\Users::create([
+        \App\Models\User::create([
             'name' => '夏目漱石',
             'email' => 'wagahai@gmail.com',
             'email_verified_at' => now(),
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
             //idのカラムは要らない
         ]);
 
-        \App\Models\Users::create([
+        \App\Models\User::create([
             'name' => '樋口一葉',
             'email' => 'higuchi_oneleaf@gmail.com',
             'email_verified_at' => now(),
@@ -62,7 +62,7 @@ class UserSeeder extends Seeder
         ]);
 
 
-        \App\Models\Users::create([
+        \App\Models\User::create([
             'name' => '福沢諭吉',
             'email' => 'yukichi@gmail.com',
             'email_verified_at' => now(),
@@ -74,7 +74,7 @@ class UserSeeder extends Seeder
             //idのカラムは要らない
         ]);
 
-        \App\Models\Users::create([
+        \App\Models\User::create([
             'name' => '渋沢栄一',
             'email' => 'I-am-new-ichimanyen@gmail.com',
             'email_verified_at' => now(),
