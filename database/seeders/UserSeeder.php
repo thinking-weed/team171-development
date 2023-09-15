@@ -37,6 +37,54 @@ class UserSeeder extends Seeder
             //idのカラムは要らない
         ]);
 
+
+        \App\Models\User::create([
+            'name' => '管理者3',
+            'email' => 'admin03@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('administrator3'), // パスワードをハッシュ化する関数
+            'role' =>'3',
+            'created_at' => now(),//php artisan db:seed --class=CategorySeeder（<--今回のseeder名）をひたすら繰り返す
+            'updated_at' => now(),//現在の時刻を入れるメソッド
+            //なお、対応するmigrationファイルにtimestamps()のカラムがないとエラーになる
+            //idのカラムは要らない
+        ]);
+
+        \App\Models\User::create([
+            'name' => '管理者4',
+            'email' => 'admin04@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('administrator4'), // パスワードをハッシュ化する関数
+            'role' =>'4',
+            'created_at' => now(),//php artisan db:seed --class=CategorySeeder（<--今回のseeder名）をひたすら繰り返す
+            'updated_at' => now(),//現在の時刻を入れるメソッド
+            //なお、対応するmigrationファイルにtimestamps()のカラムがないとエラーになる
+            //idのカラムは要らない
+        ]);
+
+        \App\Models\User::create([
+            'name' => '管理者5',
+            'email' => 'admin05@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('administrator5'), // パスワードをハッシュ化する関数
+            'role' =>'5',
+            'created_at' => now(),//php artisan db:seed --class=CategorySeeder（<--今回のseeder名）をひたすら繰り返す
+            'updated_at' => now(),//現在の時刻を入れるメソッド
+            //なお、対応するmigrationファイルにtimestamps()のカラムがないとエラーになる
+            //idのカラムは要らない
+        ]);
+
+        \App\Models\User::create([
+            'name' => '管理者6',
+            'email' => 'admin06@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('administrator6'), // パスワードをハッシュ化する関数
+            'role' =>'6',
+            'created_at' => now(),//php artisan db:seed --class=CategorySeeder（<--今回のseeder名）をひたすら繰り返す
+            'updated_at' => now(),//現在の時刻を入れるメソッド
+            //なお、対応するmigrationファイルにtimestamps()のカラムがないとエラーになる
+            //idのカラムは要らない
+        ]);
         \App\Models\User::create([
             'name' => '夏目漱石',
             'email' => 'wagahai@gmail.com',
