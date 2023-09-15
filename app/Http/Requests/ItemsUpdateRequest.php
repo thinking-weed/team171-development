@@ -4,7 +4,10 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d8b89de398706c950270f28dc8fd9a2d03f0247c
 
 class ItemsUpdateRequest extends FormRequest
 {
