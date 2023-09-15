@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Models\Category;
-use App\Models\Users;
+use App\Models\User;
 use App\Models\Item;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
@@ -22,7 +22,7 @@ class AuthenticatedSessionController extends Controller
     public function create(): View
     {
         $choices = Category::all();
-        $auth_users = Users::all();
+        $auth_users = User::all();
         $items = Item::where('delete_flag', 0)->get();
         $login_user = Auth::user();//ログインユーザー情報を取得
         return view('auth.login',compact('choices','auth_users','items'));

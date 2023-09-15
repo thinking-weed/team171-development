@@ -35,7 +35,7 @@ class Item extends Model
         return $this->belongsTo(Category::class);
     }
     public function user(){
-        return $this->belongsTo(Users::class);
+        return $this->belongsTo(User::class);
     }
     public function authuser(){
         return $this->belongsTo(User::class);

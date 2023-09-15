@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Auth;
 use App\Models\User;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
     /**
      * Store a newly created resource in storage.
@@ -44,7 +44,7 @@ class UsersController extends Controller
         ];
 
         //整理して作った$dataToInsertを挿入する
-        $UsersInfoPost = User::create($dataToInsert);//ここのcreateはレコードを挿入するメソッド
+        $UserInfoPost = User::create($dataToInsert);//ここのcreateはレコードを挿入するメソッド
         return back();/**->with('message','無事送信されました。')**/
     }
 
