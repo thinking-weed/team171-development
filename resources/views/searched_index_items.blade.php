@@ -58,6 +58,5 @@
             </table>
         </div>
     </div>
-    @include('layouts.footer')
 </x-app-layout>
 
