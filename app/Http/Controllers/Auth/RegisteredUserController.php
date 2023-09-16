@@ -6,7 +6,6 @@ use App\Models\Category;
 use App\Models\User;
 use App\Models\Item;
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
