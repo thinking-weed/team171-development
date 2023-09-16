@@ -18,6 +18,7 @@
                 </div>
                 @include('layouts.categories_dropdown')
             </div>
+            <div style="overflow-y: auto;">
             <table class="index_table table table-striped table-hover table-bordered" style="margin-bottom:1rem;">
                 <thead>
                         <tr>
@@ -53,6 +54,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
     </div>
     @include('layouts.footer')
