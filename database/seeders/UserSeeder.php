@@ -74,21 +74,7 @@ class UserSeeder extends Seeder
             //idのカラムは要らない
         ]);
 
-<<<<<<< HEAD
-        \App\Models\User::create([
-            'name' => '管理者6',
-            'email' => 'admin06@gmail.com',
-            'email_verified_at' => now(),
-            'password' => Hash::make('administrator6'), // パスワードをハッシュ化する関数
-            'role' =>'6',
-            'created_at' => now(),//php artisan db:seed --class=CategorySeeder（<--今回のseeder名）をひたすら繰り返す
-            'updated_at' => now(),//現在の時刻を入れるメソッド
-            //なお、対応するmigrationファイルにtimestamps()のカラムがないとエラーになる
-            //idのカラムは要らない
-        ]);
-=======
 
->>>>>>> 8c4936b5fcaa2a19f7683379e7e60791f8f39fec
         \App\Models\User::create([
             'name' => '夏目漱石',
             'email' => 'wagahai@gmail.com',
