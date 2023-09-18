@@ -32,7 +32,13 @@
                     @foreach( $search_results as $search_result )
                     <tr>
                     <th scope="row" class="col_id">{{ $search_result->id }}</th>
-                    <td class="col_name">{{ $search_result->name }}</td>
+                    <td class="col_name">
+                        <a href="{{ route('showeach.item.view', $search_result) }}" class="showeachlink">
+                        {{-- route(,)の第二引数は{item}というパラメータを「受け取る」設定 --}}
+                        {{-- $itemはforeachのasの後ろとも一致させないとエラーになる --}}
+                        {{ $search_result->name }}
+                        </a>
+                    </td>
                     <td class="col_category">{{ $search_result->type }}</td>
                     <td class="col_detail">{{ $search_result->detail }}</td>
                     <td class="col_button">
