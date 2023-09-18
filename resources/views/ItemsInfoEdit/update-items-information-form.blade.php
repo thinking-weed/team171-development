@@ -50,7 +50,7 @@
         @enderror
 
         <div>
-            <label for="delete_flag">{{ __('（論理）削除フラグ（delete_flag）') }}</label>
+            <label for="delete_flag">{{ __('（論理）削除フラグ（delete_flag）※0なら表示') }}</label>
             <x-text-input id="delete_flag" name="delete_flag" type="text" class="mt-1 block w-full" :value="old('delete_flag', $item->delete_flag)" />
             <x-input-error class="mt-2" :messages="$errors->get('delete_flag')" />
         </div>
