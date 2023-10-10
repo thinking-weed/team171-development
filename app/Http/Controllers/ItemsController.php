@@ -146,23 +146,21 @@ class ItemsController extends Controller
         /**
      * 商品詳細・編集画面の表示（ProfileControllerを真似しつつ、Laravelの教科書を参考に作成。下枠の注意書きに注意）
      */
-    public function editorview($id)
+    public function editorview(Item $item)
     {
         $choices = Category::all();
         $auth_users = User::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
         $login_user = Auth::user();//ログインユーザー情報を取得
-        $registered_item_informations = Item::all();
-        return view('ItemsInfoEdit.edit',compact('auth_users','login_user','registered_item_informations','choices'));
+        return view('ItemsInfoEdit.edit',compact('auth_users','login_user','item','choices'));
     }
-    // ---------------------------------------------------------------------------------------------------------------------------
-    // ここで変数にidを指定しているので、この関数に対する{{ route('items.editor.view',$item->id) }}の「->id」がないとエラーになる
-    // なお、上のcompact内に$itemないが、渡したbladeでregistered_item_informationsを@foreach( )で as $itemとしているので使える
-    // --------------------------------------------------------------------------------------------------------------------------
-        /**
+
+// --------------------------------------------------------------------------------------------------------------------------
+
+    /**
      * 商品詳細・編集画面の表示（ProfileControllerを真似しつつ、Laravelの教科書を参考に作成。上の注意書き、
      * タイプヒントに注意）
      */
-    //updateメソッドでは、引数はRequest $requestと
+
     public function update(Request $request, Item $item)
     {
 
@@ -189,13 +187,4 @@ class ItemsController extends Controller
     }
 
 
-    // public function rules2()
-    // {
-    //     return [
-    //         'name' => ['required',new DataTypeMatch('string', ':data_type_match')],//バリデーション、requiredは必須入力
-    //         'type' => ['required',new DataTypeMatch('smallInteger', ':data_type_match')],
-    //         'detail' => ['required|max:500',new DataTypeMatch('string', ':data_type_match')],
-    //         'delete_flag' => ['required',new DataTypeMatch('boolean', ':data_type_match')]
-    //     ];
-    // }
 }

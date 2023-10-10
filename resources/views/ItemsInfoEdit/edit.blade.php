@@ -11,7 +11,6 @@
 
     <div style="padding-top: 3rem;padding-bottom: 200%;margin-bottom:20%;">
         <div class="max-w-7xl sm:px-6 lg:px-8 space-y-6" style="margin-left: auto; margin-right:5%;">
-            @foreach ($registered_item_informations as $item)
             <div class="edit_part p-4 sm:p-8 bg-white shadow sm:rounded-lg flex" style="opacity: 0.8;">
                 <div class="item_edit_area">
                     @include('ItemsInfoEdit.update-items-information-form')
@@ -35,7 +34,6 @@
                 </table>
                 </div>
             </div>
-            @endforeach
         </div>
     </div>
 </x-app-layout>
