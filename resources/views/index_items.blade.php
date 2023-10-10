@@ -26,7 +26,7 @@
                 </div>
                 @include('layouts.categories_dropdown')
             </div>
-            <table class="index_table table table-striped table-hover table-bordered" style="margin-bottom:1rem; overflow-y: scroll;">
+            <table class="index_table table table-striped table-hover table-bordered" style="margin-bottom:1rem;">
                 <thead>
                         <tr>
                         <th scope="col" class="col_id">ID</th>
@@ -67,9 +67,13 @@
                     </td>
                     </tr>
                     @endforeach
+                    <div class="pagination">
+                        {{ $items->links() }}
+                    </div>
                 </tbody>
             </table>
         </div>
     </div>
+    @include('layouts.footer')
 </x-app-layout>
 
