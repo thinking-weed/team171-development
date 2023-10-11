@@ -140,7 +140,7 @@ class ItemsController extends Controller
         $choices = Category::all();
         $auth_users = User::all();//Usersテーブルの情報をデータベースのusersテーブルから全て取得
         $login_user = Auth::user();//ログインユーザー情報を取得
-        $registered_item_informations = Item::paginate(5);
+        $registered_item_informations = Item::paginate(2);
         return view('ItemsInfoEdit.edit',compact('auth_users','login_user','registered_item_informations','choices'));
     }
     // ---------------------------------------------------------------------------------------------------------------------------

@@ -27,7 +27,7 @@ public function SearchAndIndex(Request $request)
         $search_results = Item::where('name', 'like', "%$searchTerm%")
                             ->orWhere('detail', 'like', "%$searchTerm%")
                             ->orWhere('type', 'like', "%$searchTerm%")
-                            ->get();//->get()で一気に取得
+                            ->paginate(10);//->paginateで１０件ずつ取得
         $count_search_results = Item::where('name', 'like', "%$searchTerm%")
                                 ->orWhere('detail', 'like', "%$searchTerm%")
                                 //orWhereはたぶんorだし、またはこれを検索結果に含めるの意味
